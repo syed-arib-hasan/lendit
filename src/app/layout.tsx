@@ -3,7 +3,7 @@ import './globals.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  title: 'LendIt — Community Item Sharing',
+  title: 'LendIt',
   description: 'Borrow and lend items with people in your community.',
   icons: {
     icon: '/favicon.svg',
