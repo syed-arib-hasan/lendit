@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { signOut, useSession } from 'next-auth/react';
 import {
   LayoutDashboard, Search, Package, History,
-  User, LogOut, BookOpen, HandshakeIcon,
+  User, LogOut, HandshakeIcon,
 } from 'lucide-react';
 
 const nav = [
@@ -25,9 +25,7 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="px-6 py-6 border-b border-white/10">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
-            <BookOpen className="w-4 h-4 text-white" />
-          </div>
+          <img src="/logo.svg" alt="LendIt" className="w-8 h-8 rounded-lg" />
           <span className="font-display font-bold text-white text-lg tracking-tight">LendIt</span>
         </div>
       </div>
