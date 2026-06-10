@@ -10,7 +10,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-[Live Demo](lendit-psi.vercel.app) · [Report a Bug](https://github.com/syed-arib-hasan/lendit/issues) · [Request a Feature](https://github.com/syed-arib-hasan/lendit/issues)
+[Live Demo](https://lendit-psi.vercel.app) · [Report a Bug](https://github.com/syed-arib-hasan/lendit/issues) · [Request a Feature](https://github.com/syed-arib-hasan/lendit/issues)
 
 </div>
 
