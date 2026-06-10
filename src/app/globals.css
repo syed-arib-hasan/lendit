@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --sidebar-width: 256px;
+  }
+  body {
+    @apply bg-stone-50 text-stone-800 antialiased;
+  }
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-stone-200 hover:bg-white/10 transition-colors duration-150 text-sm font-medium;
+  }
+  .sidebar-link.active {
+    @apply bg-white/20 text-white;
+  }
+
+  .btn-primary {
+    @apply bg-maroon-800 hover:bg-maroon-900 text-white font-medium px-5 py-2.5 rounded-lg transition-colors duration-150 text-sm;
+  }
+  .btn-secondary {
+    @apply bg-stone-100 hover:bg-stone-200 text-stone-700 font-medium px-5 py-2.5 rounded-lg transition-colors duration-150 text-sm;
+  }
+  .btn-ghost {
+    @apply hover:bg-stone-100 text-stone-600 font-medium px-4 py-2 rounded-lg transition-colors duration-150 text-sm;
+  }
+  .btn-danger {
+    @apply bg-red-50 hover:bg-red-100 text-red-700 font-medium px-5 py-2.5 rounded-lg transition-colors duration-150 text-sm;
+  }
+  .btn-success {
+    @apply bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium px-5 py-2.5 rounded-lg transition-colors duration-150 text-sm;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-stone-100;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-stone-700 mb-1.5;
+  }
+  .form-input {
+    @apply w-full px-3.5 py-2.5 border border-stone-200 rounded-lg text-sm text-stone-800
+           focus:outline-none focus:ring-2 focus:ring-maroon-800/30 focus:border-maroon-800
+           bg-white placeholder:text-stone-400 transition-colors duration-150;
+  }
+  .form-input:read-only {
+    @apply bg-stone-50 text-stone-500;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-available {
+    @apply bg-emerald-50 text-emerald-700;
+  }
+  .badge-borrowed {
+    @apply bg-amber-50 text-amber-700;
+  }
+  .badge-pending {
+    @apply bg-blue-50 text-blue-700;
+  }
+  .badge-book {
+    @apply bg-violet-50 text-violet-700;
+  }
+  .badge-electronic {
+    @apply bg-sky-50 text-sky-700;
+  }
+  .badge-gear {
+    @apply bg-teal-50 text-teal-700;
+  }
+
+  .stat-card {
+    @apply card p-6 flex flex-col gap-2;
+  }
+
+  .page-title {
+    @apply text-2xl font-display font-bold text-stone-900;
+  }
+}
